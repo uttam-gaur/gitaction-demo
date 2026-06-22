@@ -1,19 +1,20 @@
 name: Auto java-linter
 on:
-  push:
-    paths: "*.java"
+  workflow_dispatch:
 jobs:
   Code:
     runs-on: ubuntu-latest
     steps:
       - name: clone the code
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
       - name: Set up JDK 17
         uses: actions/setup-java@v4
         with:
           java-version: '17'
           distribution: 'temurin'
-          cache: 'maven'
-      - name: lint with mven
-        run: mvn checkstyle:check
+      - name: download checkstyle
+        run: |
+          wget https://github.com/checkstyle/checkstyle/releases/download/checkstyle-10.12.4/checkstyle-10.12.4-all.jar -O checkstyle.jar
+      - name: run the style command 
+        run: java -jar checkstyle.jar -c /google_checks.xml *.java
     
