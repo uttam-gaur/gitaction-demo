@@ -1,0 +1,16 @@
+name: Auto linter
+on:
+  workflow_dispatch:
+jobs:
+  code-linter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout/clone the code
+        uses: actions/checkout@v7
+      - name: install ruff linter
+        run:  pip install ruff
+      - name: check the file 
+        run: ruff check .
+    
+    
+  
