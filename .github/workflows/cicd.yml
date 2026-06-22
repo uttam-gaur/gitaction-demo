@@ -9,16 +9,19 @@ jobs:
         run: echo "CHECKING THE CODE"
   BUILD:
     runs-on: ubuntu-latest
+    needs: CODE
     steps:
       - name: build the code
         run: echo "building of code , using containers "
   TEST:
     runs-on: ubuntu-latest
+    needs: [BUILD,CODE]
     steps:
       - name: test the code
         run: echo "Test the code "
   DEPLOY:
     runs-on: ubuntu-latest
+    needs: [BUILD,TEST]
     steps:
       - name: deploy the code
         run: echo "deploy the code on EC2"
