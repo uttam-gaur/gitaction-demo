@@ -12,4 +12,4 @@ This repo is for practising the workflows and CI part
 
 ## HELLO.YML
 ## CICD.YML
-## LINTER.YML
+## LINTER.YML for python
