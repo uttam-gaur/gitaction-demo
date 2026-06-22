@@ -1,6 +1,7 @@
 name: Auto linter
 on:
-  workflow_dispatch:
+  push:
+    paths: "*.py"
 jobs:
   code-linter:
     runs-on: ubuntu-latest
