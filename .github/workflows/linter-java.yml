@@ -1,6 +1,7 @@
 name: Auto java-linter
 on:
-  workflow_dispatch:
+  push:
+    paths: "*.java"
 jobs:
   Code:
     runs-on: ubuntu-latest
