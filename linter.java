@@ -5,7 +5,7 @@ import java.util.*;
 public class MiniLint {
 
     public static void main(String[] args) throws Exception {
-        List<String> issues = new ArrayList<>();
+        List<String> issues = new ArrayList<>();mzcs vfsbvhfsvbisvsfvbkSKJCBkjsk
         for (String path : args) {
             issues.addAll(check(path));
         }
