@@ -3,6 +3,7 @@ import java.util.*;
 
 /** MiniLint.java - tiny pure-Java linter. Usage: java MiniLint File.java */
 public class MiniLint {
+    
 
     public static void main(String[] args) throws Exception {
         List<String> issues = new ArrayList<>();
