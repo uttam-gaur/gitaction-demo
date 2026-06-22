@@ -1,7 +1,7 @@
-name: Aut0 java-linter
+name: Auto java-linter
 on:
   push:
-    paths: "*/.java"
+    paths: "*.java"
 jobs:
   Code:
     runs-on: ubuntu-latest
