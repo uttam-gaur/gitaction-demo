@@ -1,0 +1,10 @@
+name: Hello
+on: 
+  push: 
+jobs:
+  Say-hello:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: Say Hello to everyone
+        run: echo "HELLO EVERYONE THIS IS MY FIRST YML FILE "
+        
