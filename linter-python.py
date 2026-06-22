@@ -4,7 +4,6 @@
 import ast
 import sys
 
-
 def check(path):
     src = open(path, encoding="utf-8").read()
     issues = []
