@@ -1,0 +1,19 @@
+name: Aut0 java-linter
+on:
+  push:
+    paths: "*/.java"
+jobs:
+  Code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: clone the code
+        uses: action/checkout@v7
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+          cache: 'maven'
+      - name: lint with mven
+        run: mvn checkstyle:check
+    
