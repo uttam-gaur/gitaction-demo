@@ -10,3 +10,6 @@ This repo is for practising the workflows and CI part
     |
  Actions
 
+## HELLO.YML
+## CICD.YML
+## LINTER.YML
