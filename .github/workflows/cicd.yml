@@ -1,0 +1,25 @@
+name: CICD
+on:
+  push:
+jobs:
+  CODE:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: checkout the code 
+        run: echo "CHECKING THE CODE"
+  BUILD:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build the code
+        run: echo "building of code , using containers "
+  TEST:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the code
+        run: echo "Test the code "
+  DEPLOY:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the code
+        run: echo "deploy the code on EC2"
+      
