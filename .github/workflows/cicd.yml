@@ -1,6 +1,6 @@
 name: CICD
 on:
-  workflow_dispatch:
+  push:
 jobs:
   CODE:
     runs-on: ubuntu-22.04
