@@ -5,5 +5,26 @@ jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
-      - name : checkout the code
-        run: echo "code is pulled" 
+      - name : runs on ubuntu
+        run: |
+          echo "Operating System: $(uname -s)"
+          echo "Hostname: $(hostname)"
+          echo "Current User: $(whoami)"
+  job2:  
+    runs-on: windows-2025
+    steps:
+      - name: runs on windows
+        
+        run: |
+          echo "Operating System: $(uname -s)"
+          echo "Hostname: $(hostname)"
+          echo "Current User: $(whoami)"
+  job3:  
+    runs-on: macos-13
+    steps:
+      - name: runs on macos
+        run: |
+          echo "Operating System: $(uname -s)"
+          echo "Hostname: $(hostname)"
+          echo "Current User: $(whoami)"
+  
