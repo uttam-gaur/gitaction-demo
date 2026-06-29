@@ -1,0 +1,9 @@
+name: runner
+on: 
+  push: main
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+      - name : checkout the code
+        run: echo "code is pulled" 
