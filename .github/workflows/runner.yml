@@ -20,7 +20,7 @@ jobs:
           echo "Hostname: $(hostname)"
           echo "Current User: $(whoami)"
   job3:  
-    runs-on: macos-13
+    runs-on: macos-latest
     steps:
       - name: runs on macos
         run: |
