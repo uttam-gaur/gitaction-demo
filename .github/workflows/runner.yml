@@ -1,6 +1,6 @@
 name: runner
 on: 
-  push: master
+  push:
 jobs:
   job1:
     runs-on: ubuntu-latest
