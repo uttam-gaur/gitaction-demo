@@ -49,7 +49,7 @@ def check(path):
             issues.append(f"{path}:{lineno}: '{name}' imported but never used")
 
     return issues
-,zsmcnkjvbfszkjvbknvkl
+
 
 if __name__ == "__main__":
     all_issues = [i for f in sys.argv[1:] for i in check(f)]
