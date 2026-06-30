@@ -4,7 +4,7 @@ on:
     paths: "*.py"
 jobs:
   code-linter:
-    runs-on: self-hosted
+    runs-on: ubuntu-22.04
     steps:
       - name: checkout/clone the code
         uses: actions/checkout@v7
