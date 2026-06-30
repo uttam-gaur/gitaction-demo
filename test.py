@@ -12,7 +12,6 @@ print("No linting errors found.\n")
 
 # Test Stage
 print("🧪 Running tests...")
-
 def add(a, b):
     return a + b
 
