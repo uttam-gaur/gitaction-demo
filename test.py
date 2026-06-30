@@ -9,7 +9,6 @@ print("Build completed successfully.\n")
 # Lint Stage
 print("🧹 Running lint checks...")
 print("No linting errors found.\n")
-
 # Test Stage
 print("🧪 Running tests...")
 def add(a, b):
